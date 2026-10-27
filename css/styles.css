@@ -1,9 +1,22 @@
 body {
     font-family: 'Google Sans Flex', sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    color: #1a252f;
+    margin-bottom: 2px;
+    padding-bottom: 0;
 }
 
 .centered {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img.centered {
@@ -12,11 +25,34 @@ img.centered {
     margin-right: auto;
 }
 
+header {
+    background-color: #ffffff; 
+    padding: 30px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
 nav {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap; 
+}
+
+nav a {
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    color: #4a5568;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    padding: 8px 16px;
+    background-color: #0073e6;
 }
 
 a.centered {
@@ -31,7 +67,32 @@ ul {
     padding-left: 0; /* Optional: This removes the default blank indent on the left side */
 }
 
-h2, h3, h4 {
-    margin-bottom: 2px;
-    padding-bottom: 0;
+a.centered {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-decoration: none;
+}
+
+main button {
+    background-color: #3990e7;
+    color: #ffffff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Google Sans', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 14px;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+main button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 20px;
+    transform: translateY(-2px);
+}
+
+main button:active {
+    transform: translateY(0);
 }
