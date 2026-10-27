@@ -5,3 +5,33 @@ body {
 .centered {
     text-align: center;
 }
+
+img.centered {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+a.centered {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0; /* Optional: This removes the default blank indent on the left side */
+}
+
+h2, h3, h4 {
+    margin-bottom: 2px;
+    padding-bottom: 0;
+}
